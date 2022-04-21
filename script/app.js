@@ -15,20 +15,20 @@ lightTheme.style.display = SAVE_TOGGLE;
 // }
 
 
-lightTheme.addEventListener('click', (e)=>{
-    document.documentElement.setAttribute('data-theme', 'light');
-    lightTheme.style.display = 'none';
-    darkTheme.style.display = 'flex';
-    localStorage.setItem('data-theme', 'light');  
-    localStorage.setItem('theme-display', 'none');
-})
-darkTheme.addEventListener('click', (e)=>{
-    document.documentElement.setAttribute('data-theme', 'dark');
-    lightTheme.style.display = 'flex';
-    darkTheme.style.display = 'none';
-    localStorage.setItem('data-theme', 'dark');
-    localStorage.setItem('theme-display', 'flex');
-})
+// lightTheme.addEventListener('click', (e)=>{
+//     document.documentElement.setAttribute('data-theme', 'light');
+//     lightTheme.style.display = 'none';
+//     darkTheme.style.display = 'flex';
+//     localStorage.setItem('data-theme', 'light');  
+//     localStorage.setItem('theme-display', 'none');
+// })
+// darkTheme.addEventListener('click', (e)=>{
+//     document.documentElement.setAttribute('data-theme', 'dark');
+//     lightTheme.style.display = 'flex';
+//     darkTheme.style.display = 'none';
+//     localStorage.setItem('data-theme', 'dark');
+//     localStorage.setItem('theme-display', 'flex');
+// })
 
 
 // event of dropdown------------------------------------
