@@ -10,9 +10,9 @@ let SAVE_TOGGLE = localStorage.getItem('theme-display');
 document.documentElement.setAttribute('data-theme', SAVE_THEME);
 
 lightTheme.style.display = SAVE_TOGGLE;
-if(SAVE_TOGGLE == 'none'){
-    darkTheme.style.display = 'flex';
-}
+// if(SAVE_TOGGLE == 'none'){
+//     darkTheme.style.display = 'flex';
+// }
 
 
 lightTheme.addEventListener('click', (e)=>{
