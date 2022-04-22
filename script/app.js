@@ -1,7 +1,6 @@
 
 
 // toggle dark mode and light mode
-// let toggleTheme = document.querySelector('#toggle-theme');
 let lightTheme = document.querySelector('.light-theme');
 let darkTheme = document.querySelector('.dark-theme');
 
@@ -49,12 +48,16 @@ let countryData = [];
 
 // fetching api in rest country api
  let countryList = async ()=>{
+    try {
     let fetchCountryList = await fetch('https://restcountries.com/v2/all');
     countryData = await fetchCountryList.json();
     
     loadCountry(countryData);
-    
- }
+    } catch (error) {
+        alert(error);
+    }
+       
+}
 countryList();
 
 
@@ -64,7 +67,7 @@ let searchCountry = document.querySelector('#inputCountry');
 searchCountry.addEventListener('input', (e) =>{
     let search = e.target.value;
 
-    // the function of this is make the first letter of input to capitaliza
+    // the function of this is make the first letter of input to capitalize
     const capitalizeSearch = search.charAt(0).toUpperCase() + search.slice(1);
 
     let searchCountry = countryData.filter(countries=>{
