@@ -1,5 +1,5 @@
 /* variable */
-:root[data-theme="dark"] {
+:root, html[data-theme="dark"] {
   /* color */
   --DarkBlue: hsl(209, 23%, 22%);
   /* (Dark Mode Elements) */
@@ -20,7 +20,7 @@
   --font-small: 300;
 }
 
-:root[data-theme="light"] {
+html[data-theme="light"] {
   /* color */
   --DarkBlue: hsl(0, 0%, 100%);
   /* (Dark Mode Elements) */

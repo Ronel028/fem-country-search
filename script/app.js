@@ -9,7 +9,7 @@ let darkTheme = document.querySelector('.dark-theme');
 let SAVE_THEME = localStorage.getItem('data-theme');
 let SAVE_TOGGLE = localStorage.getItem('theme-display');
 
-document.documentElement.setAttribute('data-theme', 'dark');
+document.documentElement.setAttribute('data-theme', SAVE_THEME);
 
 lightTheme.style.display = SAVE_TOGGLE;
 if(SAVE_TOGGLE == 'none'){
