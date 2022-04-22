@@ -104,7 +104,7 @@ let filteredRegion = (targetRegion, country)=>{
 // display country **************************************************************
 let loadCountry = (country)=>{
     let dataGet = "";
-    country.forEach((data, index) =>{
+    country.forEach((data) =>{
        dataGet +=  `
             <div id="${data.flags.png}" class="countryList transitionWidth">
                 <div class="country-flag">
