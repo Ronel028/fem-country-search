@@ -85,7 +85,7 @@ body{
             justify-content: center;
 
             .light-theme{
-                display: none;
+                display: flex;
                 align-items: center;
                 gap: 10px;
                 font-size: toRem(14);
