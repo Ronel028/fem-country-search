@@ -31,7 +31,7 @@ darkTheme.addEventListener('click', ()=>{
     localStorage.setItem('data-theme', 'dark');
     localStorage.setItem('theme-display', 'flex');
 })
-
+//---------------------------------------------------------------------
 
 // event of dropdown------------------------------------
 let dropdow = document.querySelector('.dropdown');
