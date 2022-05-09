@@ -508,3 +508,29 @@ body{
 .transitionWidth{
     transition: all 0.3s ease-in-out;
 }
+
+.displayText{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+   
+
+    h1{
+        @media screen and (max-width: toRem(659)){
+            font-size:toRem(60);
+        }
+        @media screen and (max-width: toRem(600)){
+            font-size:toRem(40);
+        }
+        @media screen and (max-width: toRem(400)){
+             font-size:toRem(30);
+        }
+        font-size:toRem(70);
+        text-align: center;
+    }
+}

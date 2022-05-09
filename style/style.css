@@ -685,4 +685,45 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
+.displayText {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.displayText h1 {
+  font-size: 4.375rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 41.1875rem) {
+  .displayText h1 {
+    font-size: 3.75rem;
+  }
+}
+
+@media screen and (max-width: 37.5rem) {
+  .displayText h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 25rem) {
+  .displayText h1 {
+    font-size: 1.875rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -78,10 +78,9 @@ searchCountry.addEventListener('input', (e) =>{
 
     if(capitalizeSearch.match(searchCountry)){
         countryContainer.innerHTML = `
-                      <div style="width:100%;hieght:100px;display:flex;justify-content:center;align-items:center;
-                        position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)">
+                      <div class="displayText">
 
-                          <h1 style="font-size:70px;">Country Not Found</h1>
+                          <h1>Country Not Found</h1>
 
                       </div>`                 
     }
