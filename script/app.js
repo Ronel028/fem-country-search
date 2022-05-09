@@ -87,7 +87,13 @@ let filterRegionName = document.querySelector('#filter-region');
 dropdownlist.forEach(listRegion =>{
     listRegion.addEventListener('click', (e)=>{
         let region = e.target.classList;
-        filteredRegion(region, countryData);
+        
+        if(region != 'All'){
+            filteredRegion(region, countryData);
+        }
+        else{
+            loadCountry(countryData);
+        }
     })
 })
 
