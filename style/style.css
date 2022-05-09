@@ -726,4 +726,10 @@ body {
     font-size: 1.875rem;
   }
 }
+
+@media screen and (max-width: 18.75rem) {
+  .displayText h1 {
+    font-size: 1.25rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
