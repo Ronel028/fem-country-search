@@ -71,10 +71,25 @@ searchCountry.addEventListener('input', (e) =>{
     const capitalizeSearch = search.charAt(0).toUpperCase() + search.slice(1);
 
     let searchCountry = countryData.filter(countries=>{
-        return countries.name.includes(capitalizeSearch);
+
+        return countries.name.includes(capitalizeSearch)
+
     })
 
-    loadCountry(searchCountry);
+    if(capitalizeSearch.match(searchCountry)){
+        countryContainer.innerHTML = `
+                      <div style="width:100%;hieght:100px;display:flex;justify-content:center;align-items:center;
+                        position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)">
+
+                          <h1 style="font-size:70px;">Country Not Found</h1>
+
+                      </div>`                 
+    }
+    else{
+       loadCountry(searchCountry);               
+    }
+    
+  
 })
 //******************************************************************************* */
 
@@ -87,7 +102,7 @@ let filterRegionName = document.querySelector('#filter-region');
 dropdownlist.forEach(listRegion =>{
     listRegion.addEventListener('click', (e)=>{
         let region = e.target.classList;
-        
+
         if(region != 'All'){
             filteredRegion(region, countryData);
         }
